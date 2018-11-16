@@ -6,6 +6,8 @@ module Traitify
         Hashie::Mash.new post("/assessments", options)
       end
 
+      # Valid option is
+      # - data (ex: recommendation)
       def assessment(assessment_id, options = {})
         Hashie::Mash.new get("/assessments/#{assessment_id}", options)
       end

@@ -1,0 +1,24 @@
+[
+  {
+    "regression": null,
+    "id": "la9857ab-408e-4294-afa4-631a2135c7a3",
+    "deck_id": "big-five",
+    "name": "Delivery Driver",
+    "range_types": [],
+    "types": [],
+    "rankings": [],
+    "locale_key": "en-US",
+    "default": true
+  },
+  {
+    "regression": null,
+    "id": "4hd57faf-b90a-4f12-a485-a52c8b0c8c7a",
+    "deck_id": "big-five",
+    "name": "Line Cook",
+    "range_types": [],
+    "types": [],
+    "rankings": [],
+    "locale_key": "en-US",
+    "default": false
+  }
+]
