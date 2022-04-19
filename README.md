@@ -2,6 +2,10 @@
 
 Traitify is a ruby gem wrapper for Traitify's Personality API
 
+## Fountain Changes
+
+* Added recommendations endpoint
+
 ## Installation
 
 Add this line to your Gemfile (using bundler):
