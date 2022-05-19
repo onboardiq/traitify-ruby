@@ -5,6 +5,7 @@ Traitify is a ruby gem wrapper for Traitify's Personality API
 ## Fountain Changes
 
 * Added recommendations endpoint
+* Loosen Faraday version requirements to allow 1.x
 
 ## Installation
 
@@ -15,6 +16,8 @@ Add this line to your Gemfile (using bundler):
 Or install it yourself with:
 
     gem install traitify
+
+To run locally use `irb -I lib` and then you can `require 'tratifiy'`.
 
 ## Usage
 
