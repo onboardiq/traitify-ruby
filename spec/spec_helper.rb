@@ -10,10 +10,16 @@ RSpec.configure do |config|
 end
 
 def stub_it(http_method = :any, endpoint = "/", status = 200, response)
-  url = "https://secret:x@example.com/v1#{endpoint}"
+  url = "https://example.com/v1#{endpoint}"
   stub_request(http_method, url).to_return(
     status: status,
     body: File.read(File.expand_path("../support/mocks/#{response}.json", __FILE__)),
-    headers: { 'Content-type' => "application/json" }
+    headers: {
+      'Accept'=>'application/json',
+      'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+      'Authorization'=>'Basic c2VjcmV0Ong=',
+      'Content-type' => "application/json",
+      'User-Agent'=>'Faraday v1.10.0'
+    }
   )
 end
